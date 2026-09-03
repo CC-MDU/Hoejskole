@@ -74,6 +74,7 @@ h1, h2 {
   gap: 20px;
  }
 
-#kontaktoplysninger {
-  padding: 15px;
-}
+ .flexkontakt{
+  display: flex;
+  padding: 15px
+ }
