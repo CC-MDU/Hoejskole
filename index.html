@@ -19,6 +19,31 @@
   <!-- vi begynder med headeren -->
   <!-- Headeren har den titel, som man gerne vil have på sin forside helt øverst -->
   <!-- Den står mellem headerne, så man ved hvornår den starter og slutter. Slutningen har en / -->
+
+
+<!--- Navigation placeres øverst eller under headeren-->
+<nav>
+  <!-- logo med link til forsiden, som altid hedder index.html-->
+   <!-- alle dem med a er, hvor vi linker til noget. src er source. Man skal have billeder nede i mappen, for at kunne få dem ind -->
+    <!-- alt er tekst, der vises, hvis billedet ikke kan indlæses-->
+
+   <a href="index.html">
+    <img src="images/Logo.png" alt="Logo: Højskolen Atterdag">
+   </a>
+
+   <a href="https://www.dr.dk/drtv/">Danmarks Radio
+  </a>
+
+  <a href="https://tv2.dk/">TV2
+  </a>
+
+  <a href="https://multimusen.dk/">Multimusen
+  </a>
+
+</nav>
+
+
+
   <header>
    <h1>Højskolen Atterdag</h1>
     <h2>Hvor du atter bliver dannet</h2>
@@ -29,7 +54,7 @@
  <!-- Main er hvor alt hovedindhold som ikke er header eller footer skal være -->
 <main>
 
-
+<div class="flexbilleder">
 <article>
  <img src="images/forstander-EigilBavnehoej.png" alt="Billede af forstander"
  </h2>Forstander: Eigil Bavnehøj</h2>
@@ -47,7 +72,32 @@
 </h2>Lære: Morgana Le fay</h2>
 <p>Beskrivelse af morgana</p>
 </article>
+</div>
 
+<!-- Flexbox demo. Man skriver class for at kunne bruge den flere gange. De skal være inden for en container
+ for at vi kan flexe -->
+ <div class="flexdemo">
+  <article>
+    <h3>Kano</h3>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </article>
+
+  <article>
+    <h3>Plantefarve for alle</h3>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </article>
+
+   <article>
+    <h3>Guitar for letøvede</h3>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </article>
+ </div>
 
 </main>
 
@@ -56,10 +106,13 @@
 
 <!-- Kontaktoplysninger -->
 <article> <id="Kontaktoplysninger">
+<h4>Kontaktoplysninger</h4>
+ <p>
   Højskolen atterdag <br>
   Tvedhøj 19 <br>
   8220 Brabrand <br>
   tlf. 1234 5678 (man. - tors. 8.00-16.00) <br>
+ 
 </article>
 </footer>
 

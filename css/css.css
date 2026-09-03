@@ -3,6 +3,20 @@
  * file: css/css.css
  * purpose: styling
  **/
+/*Fonte er her øverst*/
+
+/*Farver kommer her, hvor man laver en farvepalette*/
+:root {
+  --tekst: rgb(247, 244, 244);
+  --Baggrund: rgb(142,172,172);
+  --Kontrast1: rgb(119, 111, 88);
+  --Konstrast2: rgb(231, 231, 78);
+  --Kontrast3: rgb(228, 138, 41);
+  --kontrast4: rgb(229, 78, 78);
+  --kontrast5: rgb(154, 227, 98);
+  --kontrast6: rgb(114, 68, 200);
+}
+
 
 /* Remove whitespace on top of certain browsers Dette angiver størrelsen*/
 * {
@@ -11,32 +25,55 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color:darkslategray;
+/* sticky navigation. Vores navigation bliver i toppen. color er skriftens farve*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: var(--tekst);
+  background-color: var(--Kontrast1);
 }
 
+/* gør logo, som er i navigationen mindre*/
+ nav a img {
+  height: 99px;
+  width: auto;
+ }
+
+ /*angive farve på baggrundsfarve*/
+body{
+  background-color: var(--Baggrund);
+}
+
+
+/*bredde på billederne i main*/
 img{
   width:100%;
 }
 
+/*teksten som hedder h1 og h2 centreres*/
 h1, h2 {
   text-align:center;
 }
 
-/* Define variables in the :root */
- 
-
-/* Use your variables on elements along these lines */
-/*
-:root {
-  --contrast: lime;
-  --backgr: #000;
-}
-
---- You can use the variables like this ---
+/*Herunder vises det hvordan man bruger sin farve pallet og man kan bruge de variabler man angiver i root på mange måder.*/
 
  main {
    color: var(--contrast);
    background-color: var(--backgr);
  }
-*/
+
+ .flexdemo {
+  display:flex;
+  padding: 15px;
+ }
+
+ .flexbilleder {
+  display:flex;
+  padding: 15px;
+  gap: 20px;
+ }
+
+#kontaktoplysninger {
+  padding: 15px;
+}
